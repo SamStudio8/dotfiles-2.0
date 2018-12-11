@@ -29,10 +29,10 @@ tmux:
 
 powerline: tmux fish
 	sudo pip install powerline-status
-	location=`pip show powerline-status | grep Location | cut -f2 -d' '`
-	sed "s,#POWERLINESETUPROOT,$location," ~/.config/fish/config.fish > ~/.config/fish/config.fish
+	LOCATION = `pip show powerline-status | grep Location | cut -f2 -d' '`
+	sed "s,#POWERLINESETUPROOT,{$LOCATION}," ~/.config/fish/config.fish > ~/.config/fish/config.fish
 	sed 's,#POWERLINEENABLE,,' ~/.config/fish/config.fish > ~/.config/fish/config.fish
-	sed "s,#POWERLINESETUPROOT,$location," ~/.tmux.conf > ~/.tmux.conf
+	sed "s,#POWERLINESETUPROOT,{$LOCATION}," ~/.tmux.conf > ~/.tmux.conf
 	sed 's,#POWERLINEENABLE,,' ~/.tmux.conf > ~/.tmux.conf
 
 git:
