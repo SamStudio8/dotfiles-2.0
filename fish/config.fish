@@ -59,10 +59,6 @@ end
 #POWERLINEENABLEset fish_function_path $fish_function_path "#POWERLINESETUPROOT/powerline/bindings/fish"
 #POWERLINEENABLEpowerline-setup
 
-function ..
-    cd ..
-end
-
-function ...
-    cd ../..
-end
+alias python="python3"
+alias ..="cd .."
+alias ...="cd ../.."
