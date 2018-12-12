@@ -30,10 +30,13 @@ sed -i 's,#FISHENABLE,,' ~/.tmux.conf
 # fucking powerline
 sudo $PIP install powerline-status
 mkdir -p ~/.config/powerline/colorschemes/tmux/
+mkdir -p ~/.config/powerline/themes/shell/
 
 cp `pwd`/powerline/config.json ~/.config/powerline/
 cp `pwd`/powerline/default.json ~/.config/powerline/colorschemes/
+
 cp `pwd`/powerline/tmux/default.json ~/.config/powerline/colorschemes/tmux/
+cp `pwd`/powerline/themes/shell/default.json ~/.config/powerline/themes/shell/
 
 # powerline-handlers
 LOCATION=`$PIP show powerline-status | grep Location | cut -f2 -d' '`
