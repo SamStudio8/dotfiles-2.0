@@ -26,17 +26,17 @@ sed -i 's,#FISHENABLE,,' ~/.tmux.conf
 
 # fucking powerline
 sudo pip install powerline-status
+cp `pwd`/powerline/config.json ~/.config/powerline
+
+mkdir -p ~/.config/powerline/colorschemes/tmux
+cp `pwd`/powerline/default.json ~/.config/powerline/colorschemes
+cp `pwd`/powerline/tmux/default.json ~/.config/powerline/colorschemes/tmux
+
+# powerline-handlers
 LOCATION=`pip show powerline-status | grep Location | cut -f2 -d' '`
 echo $LOCATION
-
-# powerline-fish
 sed -i "s,#POWERLINESETUPROOT,$LOCATION," ~/.config/fish/config.fish
 sed -i 's,#POWERLINEENABLE,,' ~/.config/fish/config.fish
-
-# powerline-tmux
 sed -i "s,#POWERLINESETUPROOT,$LOCATION," ~/.tmux.conf
 sed -i 's,#POWERLINEENABLE,,' ~/.tmux.conf
-mkdir -p ~/.config/powerline/colorschemes/tmux
-cp `pwd`/tmux/config.json ~/.config/powerline
-cp `pwd`/tmux/default.json ~/.config/powerline/colorschemes/json
 
