@@ -4,5 +4,30 @@
             "hard": " ",
             "soft": ""
         }
-    }
+    },
+	"segments": {
+        "left": [
+			{
+				"function": "powerline.segments.common.net.hostname"
+			}
+        ],
+		"right": [
+			{
+				"function": "powerline.segments.common.sys.uptime",
+				"priority": 50
+			},
+			{
+				"function": "powerline.segments.common.sys.system_load",
+				"priority": 50
+			}
+		]
+	},
+	"segment_data": {
+		"powerline.segments.common.net.hostname": {
+			"before": ""
+		},
+		"powerline.segments.common.sys.uptime": {
+			"before": ""
+		}
+	}
 }
