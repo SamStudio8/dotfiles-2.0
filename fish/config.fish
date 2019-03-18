@@ -63,3 +63,7 @@ alias python="python3"
 alias pip="pip3"
 alias ..="cd .."
 alias ...="cd ../.."
+alias vim="vim -p"
+
+set VIRTUAL_ENV_DISABLE_PROMPT 1
+#CONDAENABLEsource /home/ubuntu/miniconda3/etc/fish/conf.d/conda.fish
