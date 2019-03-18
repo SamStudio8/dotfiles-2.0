@@ -135,5 +135,9 @@ noremap <DOWN>  gj
 
 let g:tex_flavor='latex'
 
-" Stop fucking adding numbers
+" Stop fucking incrementing selected numbers when using tmux C-a binding
 map <C-a> <Nop>
+
+" Snakefile highlighting
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake

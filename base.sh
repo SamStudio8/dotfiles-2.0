@@ -11,6 +11,10 @@ cp -r `pwd`/vim/colors ~/.vim/colors
 rm -rf ~/.vim/bundle/
 git clone git://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
 
+# vim snakemake
+mkdir -p ~/.vim/syntax/
+curl -LSso ~/.vim/syntax/snakemake.vim https://mstamenk.github.io/assets/files/snakemake.vim
+
 # git
 cp `pwd`/git/gitconfig ~/.gitconfig
 
