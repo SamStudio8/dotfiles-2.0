@@ -32,7 +32,7 @@ sed -i "s,#FISHBIN,$LOCATION," ~/.tmux.conf
 sed -i 's,#FISHENABLE,,' ~/.tmux.conf
 
 # fucking powerline
-sudo $PIP install powerline-status
+$PIP install --user powerline-status
 mkdir -p ~/.config/powerline/colorschemes/tmux/
 mkdir -p ~/.config/powerline/themes/shell/
 mkdir -p ~/.config/powerline/themes/tmux/
