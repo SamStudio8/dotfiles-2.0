@@ -56,6 +56,12 @@ function todo
     grep -rniI "TODO" .
 end
 
+function body
+    read heado
+    printf '%s\n' "$heado"
+    $argv
+end
+
 #POWERLINEENABLEset fish_function_path $fish_function_path "#POWERLINESETUPROOT/powerline/bindings/fish"
 #POWERLINEENABLEpowerline-setup
 
@@ -64,6 +70,8 @@ alias pip="pip3"
 alias ..="cd .."
 alias ...="cd ../.."
 alias vim="vim -p"
+alias rehoot='sudo reboot'
+alias hawk="awk 'FNR>1 || NR==1'"
 
 # Stop virtualenv name being duplicated
 #POWERLINEENABLEset VIRTUAL_ENV_DISABLE_PROMPT 1
