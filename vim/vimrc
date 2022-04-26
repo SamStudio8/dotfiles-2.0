@@ -23,7 +23,7 @@ set nocompatible
 set nocp
 
 " Editor
-set number
+set nu rnu
 set title
 set visualbell
 set colorcolumn=72,80,88
