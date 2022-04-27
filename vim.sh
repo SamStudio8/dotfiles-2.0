@@ -18,4 +18,4 @@ vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
 # syntax
 curl -LSso ~/.vim/syntax/snakemake.vim https://raw.githubusercontent.com/snakemake/snakemake/main/misc/vim/syntax/snakemake.vim
-curl -LSso ~/.vim/syntax/nextflow.vim https://raw.githubusercontent.com/LukeGoodsell/nextflow-vim/master/syntax/nextflow.vim
+curl -LSso ~/.vim/syntax/nextflow.vim https://raw.githubusercontent.com/Mxrcon/nextflow-vim/master/syntax/nextflow.vim
