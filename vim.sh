@@ -10,9 +10,11 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # jellybeans
 curl -LSso ~/.vim/colors/jellybeans.vim https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
 
-# vim-bundle
-rm -rf ~/.vim/bundle/vim-gitgutter
-git clone git://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
+# gitgutter
+mkdir -p ~/.vim/pack/airblade/start
+cd ~/.vim/pack/airblade/start
+git clone https://github.com/airblade/vim-gitgutter.git
+vim -u NONE -c "helptags vim-gitgutter/doc" -c q
 
 # syntax
 curl -LSso ~/.vim/syntax/snakemake.vim https://raw.githubusercontent.com/snakemake/snakemake/main/misc/vim/syntax/snakemake.vim
