@@ -5,6 +5,8 @@
 	ui = 2
 [push]
 	default = simple
+[core]
+	editor = vim
 
 [filter "lfs"]
 	process = git-lfs filter-process
