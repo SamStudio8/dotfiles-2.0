@@ -1,29 +1,15 @@
 alias python="python3"
 PIP="pip3"
 
+# dots
+./dots.sh
+
 # vim
-mkdir -p ~/.vim/autoload ~/.vim/bundle
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cp `pwd`/vim/vimrc ~/.vimrc
-cp -r `pwd`/vim/colors ~/.vim/colors
-
-# vim-bundle
-rm -rf ~/.vim/bundle/
-git clone git://github.com/airblade/vim-gitgutter.git ~/.vim/bundle/vim-gitgutter
-
-# vim snakemake
-mkdir -p ~/.vim/syntax/
-curl -LSso ~/.vim/syntax/snakemake.vim https://mstamenk.github.io/assets/files/snakemake.vim
-
-# git
-cp `pwd`/git/gitconfig ~/.gitconfig
+./vim.sh
 
 # fish
 mkdir -p ~/.config/fish
 cp `pwd`/fish/config.fish ~/.config/fish/config.fish
-
-# tmux
-cp `pwd`/tmux/tmux.conf ~/.tmux.conf
 
 # tmux-fish
 LOCATION=`which fish`
